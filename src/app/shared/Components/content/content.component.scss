@@ -1,0 +1,45 @@
+.heaading{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.search-input{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px !important;
+}
+
+.search{
+    border:none !important;
+
+    &:focus{
+        outline: none;
+    box-shadow: none;
+    }
+}
+
+.sub-head{
+    font-weight: 500;
+}
+
+.filters{
+    display: flex;
+    gap: 1rem;
+    padding: 0px;
+    .filter{
+        width: fit-content;
+        height: 30px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #999494;
+        border-radius: 6px;
+        opacity: 0.5;
+
+        .fa-solid{
+            cursor: pointer;
+        }
+    }
+}

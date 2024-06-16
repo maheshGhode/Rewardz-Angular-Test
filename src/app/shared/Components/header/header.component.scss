@@ -1,0 +1,21 @@
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo-img {
+    height: 60px;
+    overflow: hidden;
+  }
+
+  .notification {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
