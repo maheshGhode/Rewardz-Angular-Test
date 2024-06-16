@@ -1,0 +1,23 @@
+
+.filter-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border: 0.2px solid rgb(189, 186, 186);
+    box-shadow: 0px 8px 12px rgba(9, 30, 66, 0.15);
+    border-radius: 2px;
+    padding: 15px 10px;
+
+    .fa-circle-check{
+        flex-grow: 1;
+        text-align: end;
+        cursor: pointer;
+    }
+}

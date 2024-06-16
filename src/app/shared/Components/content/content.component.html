@@ -12,6 +12,7 @@
           id="search"
           class="form-control search"
           placeholder="search"
+          (keypress)="onSearch($event)"
         />
       </div>
       <div class="filters mt-3">
@@ -26,7 +27,25 @@
         </div>
       </div>
     </div>
-    <div class="col-md-3">side bar</div>
-    <div class="col-md-9">contents</div>
+    <div class="col-md-3 categ">
+        <h2>Categories</h2>
+       <app-filter-card></app-filter-card>
+    </div>
+    <div class="col-md-9">
+        <div class="row">
+            <div class="col-md-4" *ngFor="let data of filteredCards">
+                <div class="card mb-4">
+                    <img src="{{data.display_img_url}}" class="card-img-top" alt="img">
+                    <div class="card-body">
+                      <h5 class="card-title text-center"><h4><strong>{{data.name}}</strong></h4></h5>
+                      <p class="card-text text-center mb-0">point {{data.point}}</p>
+                      <hr>
+                      <p class="card-text text-center mb-0 valid">Valid Until <span class="unitl">{{data.valid_until}}</span></p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+   
   </div>
 </div>

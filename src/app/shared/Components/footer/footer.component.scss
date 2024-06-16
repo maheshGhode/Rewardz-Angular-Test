@@ -25,3 +25,32 @@
     }
   }
 }
+
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  .data {
+    flex-direction: column;
+    gap: 2rem;
+  
+    .img {
+      height: 60px;
+      overflow: hidden;
+    }
+    .year{
+      text-align: center;
+      opacity: 0.5;
+    }
+  
+    .list{
+      li{
+          margin-left: -10px;
+      }
+    }
+  }
+
+  .about{
+    h2{
+      margin-left: 20px;
+    }
+  }
+}

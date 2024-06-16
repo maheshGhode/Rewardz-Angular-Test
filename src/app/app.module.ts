@@ -9,13 +9,15 @@ import { ContentComponent } from './shared/Components/content/content.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { FilterCardComponent } from './shared/Components/filter-card/filter-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ContentComponent
+    ContentComponent,
+    FilterCardComponent
   ],
   imports: [
     BrowserModule,
